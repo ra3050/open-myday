@@ -8,10 +8,11 @@ function Useragent(props) {
         const ua = navigator.userAgent.toLowerCase();
 
         if (window.confirm("스토어로 이동하시겠습니까?")) {
-            location.href = ua.indexOf("android") > -1 ? "https://play.google.com/store/apps/details?id=xxx" : "https://apps.apple.com/kr/app/id1639296945";
+            location.href = "https://apps.apple.com/kr/app/id1639296945";
+            // location.href = ua.indexOf("android") > -1 ? "https://play.google.com/store/apps/details?id=xxx" : "https://apps.apple.com/kr/app/id1639296945";
             window.open(location.href);
         }
-        
+
     }, []);
 
 
